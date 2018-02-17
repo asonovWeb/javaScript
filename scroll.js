@@ -21,14 +21,14 @@
 					if(scrolMemory < offsetTopPx){
 							timerId2 = setInterval(function(){
 							window.scrollBy(0, scrollTOBY);
-							delayEto();
+							clearPovtor();
 						},10);
 					};
 				};
 			};
 		};
 	},false);
-	function delayEto(){
+	function clearPovtor(){
 		if(scrolMemory >= offsetTopPx - 50){
 			clearInterval(timerId2);
 			console.log('aa')
